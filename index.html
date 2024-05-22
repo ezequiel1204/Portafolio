@@ -1,0 +1,324 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Template portafolio desarrollador UI/UX " />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
+    <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="flex w-full fixed top-0 z-1">
+        <nav class="flex justify-content-between w-full navbar">
+            <span class="logo cursor-pointer" onclick="scrollToSection('home')">
+                <img src="img/logo.png" alt="Logo portafolio" width="10" height="10">
+            </span>
+            <input type="checkbox" aria-label="Checkbox para mostrar y quitar hamburger menu"
+                class="checkbox xl:hidden">
+            <div class="hamburger__lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <div class="header__info flex align-items-center gap-3">
+                <ul class="flex flex-column xl:flex-row list-none">
+                    <li onclick="scrollToSection('about')">Sobre mí</li>
+                    <li onclick="scrollToSection('services')">Servicios</li>
+                    <li onclick="scrollToSection('portfolio')">Portafolio</li>
+                    <li onclick="scrollToSection('contact')">Contacto</li>
+                </ul>
+                <div class="hireMe__button pt-4">
+                    <a href="mailTo:john@email.com" aria-label="Enviar mensaje al correo"
+                        class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contratame</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--HOME PAGE -->
+    <div class="container">
+        <section id="home"
+            class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
+            <div class="left__content col-12 xl:col-6">
+                <div class="message__bubble triangle mb-4 md:mb-2">
+                    <div class="message__text p-2 sm:p-3 text-center">
+                        <p>Hola, Yo soy</p>
+                    </div>
+                </div>
+                <h1 class="text-3xl sm:text-5xl md:text-7xl">Mauro Ezequiel Trejo</h1>
+                <p class="text-gray-500">
+                    DISEÑADOR DIGITAL DE
+MEDIOS INTERACTIVOS
+                </p>
+                <div class="home__buttons">
+                    <a href="img/cv.png" aria-label="Descargar curriculum"
+                        class="cursor-pointer border-round-lg no-underline" download>Descargar CV</a>
+                    <button onclick="scrollToSection('portfolio')" aria-label="Deslizar a sección portafolio para mostrar mis trabajos"
+                        class="cursor-pointer border-round-lg">Mi trabajo</button>
+                </div>
+            </div>
+            <div class="right__content col-6 sm:col-6 xl:col-5">
+                <img src="img/Snapchat-2099345267.jpg" alt="Foto perfil">
+            </div>
+        </section>
+        <!--ABOUT ME-->
+        <section id="about" class="about__me w-full min-h-screen flex align-items-center">
+            <div class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
+                <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
+                    <h1 class="text-3xl md:text-5xl">Sobre mí</h1>
+                    <p class="text-gray-500">Estudiante de Diseño Digital de
+                        Medios Interactivos en la Universidad
+                        Autónoma de Ciudad Juárez (UACJ)
+                        con habilidades destacadas en
+                        modelado 3D, animación, Illustrator,
+                        edición de video y audio. Amplios
+                        conocimientos en programación,
+                        incluyendo C, C#, HTML, CSS y
+                        JavaScript. Orientado a la resolución
+                        creativa de problemas y buscando
+                        aplicar mis habilidades en un entorno
+                        profesional.p>
+                    <div class="knowledge flex flex-column gap-3 mt-5">
+                        <p>Modelado 3D (Maya, Blender)
+                        </p>
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                        <p>Animación (2D y 3D)
+                        </p>
+                        <div class="progress__bar progress__html">
+                            <span></span>
+                        </div>
+                        <p>Illustrator(adobe illustrator,
+                            photoshop)</p>
+                        <div class="progress__bar progress__angular">
+                            <span></span>
+                        </div>
+                        <p>Edición de video (After Effects,
+                            Davinci resolve)</p>
+                        <div class="progress__bar progress__reactJs">
+                            <span></span>
+                        </div>
+                        <p>Edición de audio(Adobe audition)
+                        </p>
+                        <div class="progress__bar progress__reactJs">
+                            <span></span>
+                        </div>
+                        <p>UX
+                        </p>
+                        <div class="progress__bar progress__reactJs">
+                            <span></span>
+                        </div>
+                        <p>HTML, CSS, JavaScript
+                        </p>
+                        <div class="progress__bar progress__reactJs">
+                            <span></span>
+                        </div>  
+                    </div>
+                    <div class="hireMe__button pt-4">
+                        <a href="mauro.ezequiel66@gmail.com" aria-label="Enviar mensaje al correo"
+                            class="cursor-pointer no-underline border-round-lg">Contratame</a>
+                    </div>
+
+                </div>
+                <div class="image col p-0 mt-6 md:mt-0">
+                    <img src="img/_718e6d40-f85a-47db-8cc1-52075801e6fe.jpg" alt="Foto relacionado a acerca de mí" width="100" height="100">
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--FREE LANCER SECTION -->
+    <section class="freelancer mb-4 mt-4 min-w-full flex flex-column justify-content-center align-items-center">
+        <p class="text-sm">Tienes un proyecto en mente?</p>
+        <h1 class="text-center">Estoy disponible como freelancer</h1>
+        <div class="hireMe__button pt-4">
+            <a href="mailTo:mauro.ezequiel66@gmail.com" aria-label="Enviar mensaje al correo"
+                class="cursor-pointer no-underline border-round-lg">Escríbeme</a>
+        </div>
+    </section>
+   
+
+        <!--PORTFOLIO -->
+        <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
+            <div class="portfolio__title flex flex-column gap-3 text-center">
+                <h1 class="text-3xl md:text-5xl">Mi trabajo</h1>
+                <p class="text-gray-400 text-sm md:text-base">
+                    Me especializo en el deseño web y el modelado 3D.
+                </p>
+            </div>
+            <div class="portfolio__gallery">
+                <div class="gallery__categories mb-5 mt-5">
+                    <ul class="flex list-none flex-wrap justify-content-center gap-3">
+                        <li class="filter-item active" data-filter="all">Todos</li>
+                        <li class="filter-item " data-filter="Modelado3d">Modelado 3d</li>
+                        <li class="filter-item " data-filter="Animacion">Animacion</li>
+                        <li class="filter-item " data-filter="Videojuegos">Videojuegos</li>
+                        <li class="filter-item " data-filter="IllustracionyUx">Illustracion y UX</li>
+                    </ul>
+                </div>
+                <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
+                    <div class="project__card Modelado 3d">
+                        <img src="img/img1.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card Modelado3d">
+                        <img src="img/img2.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card Animacion">
+                        <img src="img/zombie.gif" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card IllustracionyUx">
+                        <img src="img/img3.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card Modelado3d">
+                        <img src="img/imagen (4).png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card IllustracionyUx">
+                        <img src="img/poster final.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card IllustracionyUx">
+                        <img src="img/logo 2.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+
+    <video width="640" height="360" controls>
+        <source src="img/TRAILERFINAL.mov" type="video/mp4">
+     
+    
+    </video>
+                </div>
+            </div>
+        </section>
+        <!--FOOTER -->
+        <footer id="contact" class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center">
+            <div class="social__media col-12 md:col-4 flex flex-column justify-content-between">
+                <h3>Redes sociales</h3>
+                <p>Diseñador Digital de medios interactivos</p>
+                <p>Contactame en mis redes sociales</p>
+                <div class="social__mediaIcons mt-5 flex lg:justify-content-center gap-3">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Ir a facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Ir a instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="Ir a linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact col-12 sm:col-6 sm:pt-0 md:pt-2 md:col-4 flex flex-column justify-content-between md:align-items-center">
+                <h3>Contacto</h3>
+                <div class="phone__number flex align-items-center gap-2">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+52 6568670199</p>
+                </div>
+                <div class="email flex align-items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>mauro.ezequiel66@gmail.com</p>
+                </div>
+                <a href="mailTo:mauro.ezequiel66@gmail.com"
+                    class="cursor-pointer text-center col-4 sm:col-6 xl:col-4 mt-3 no-underline border-round-lg">
+                    <span>
+                        <i class="fa-solid fa-message"></i>
+                    </span>Escríbeme
+                </a>
+            </div>
+            <div class="my__services col-12 sm:col-6 sm:p-0 md:col-4 md:pt-2 md:align-items-center flex flex-column justify-content-between">
+                <h3>Mis Servicios</h3>
+                <p>Desarrollo web</p>
+                <p>Modelado 3D y Animacion</p>
+                <p>Animacion</p>
+                <P>Editor de video</P>
+            </div>
+        </footer>
+    </div>
+
+</body>
+<script>
+    const filterContainer = document.querySelector(".gallery__categories");
+    const galleryItems = document.querySelectorAll(".project__card");
+
+    filterContainer.addEventListener("click", (event) => {
+        if (event.target.classList.contains("filter-item")) {
+            filterContainer.querySelector(".active").classList.remove("active");
+            event.target.classList.add("active")
+            const filterValue = event.target.getAttribute("data-filter")
+            galleryItems.forEach(item => {
+                if (item.classList.contains(filterValue) || filterValue === "all") {
+                    item.classList.remove("hide")
+                    item.classList.add("show")
+                } else {
+                    item.classList.remove("show")
+                    item.classList.add("hide")
+                }
+            })
+        }
+    })
+
+    function scrollToSection(sectionId){
+        document.getElementById(sectionId).scrollIntoView({behavior:"smooth"})
+    }
+</script>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas 30x16</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 45%;
+            margin: 10px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        td {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table id="numTable1"></table>
+        <table id="numTable2"></table>
+    </div>
+
+    <script>
+        function generateNumbers() {
+            let numbers = [];
+            const counts = {
+                30: 100, 32: 12, 33: 100, 34: 20, 36: 100, 37: 100, 38: 97,
+                39: 30, 40: 30, 41: 100, 42: 198, 43: 50
+            };
+
+            for (let num = 10; num <= 44; num++) {
+                if (counts[num] !== undefined) {
+                    for (let i = 0; i < counts[num]; i++) {
+                        numbers.push(num);
+                    }
+                } else {
+                    numbers.push(num);
+                }
+            }
+
+            // Mezclar los números
+            for (let i = numbers.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [numbers[i], numbers[j]] = [numbers[j], numbers[i]];
+            }
+
+            return numbers;
+        }
+
+        function createTable(tableId, numbers) {
+            const table = document.getElementById(tableId);
+            let index = 0;
+
+            for (let i = 0; i < 30; i++) {
+                const row = document.createElement('tr');
+                for (let j = 0; j < 16; j++) {
+                    const cell = document.createElement('td');
+                    cell.textContent = numbers[index++];
+                    row.appendChild(cell);
+                }
+                table.appendChild(row);
+            }
+        }
+
+        function createTables() {
+            const numbers = generateNumbers();
+            const half = Math.ceil(numbers.length / 2);
+
+            const numbers1 = numbers.slice(0, half);
+            const numbers2 = numbers.slice(half);
+
+            createTable('numTable1', numbers1);
+            createTable('numTable2', numbers2);
+        }
+
+        createTables();
+    </script>
+</body>
+</html>

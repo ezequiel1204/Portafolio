@@ -30,7 +30,7 @@
             <div class="header__info flex align-items-center gap-3">
                 <ul class="flex flex-column xl:flex-row list-none">
                     <li onclick="scrollToSection('about')">Sobre mí</li>
-                    <li onclick="scrollToSection('services')">Servicios</li>
+
                     <li onclick="scrollToSection('portfolio')">Portafolio</li>
                     <li onclick="scrollToSection('contact')">Contacto</li>
                 </ul>
@@ -63,8 +63,8 @@ MEDIOS INTERACTIVOS
                         class="cursor-pointer border-round-lg">Mi trabajo</button>
                 </div>
             </div>
-            <div class="right__content col-6 sm:col-6 xl:col-5">
-                <img src="img/Snapchat-2099345267.jpg" alt="Foto perfil">
+            <div class="right__content col-9 sm:col-6 xl:col-5">
+                <img src="img/Snapchat-2099345267.jpg" alt="Foto perfil" class="responsive-img">
             </div>
         </section>
         <!--ABOUT ME-->
@@ -122,8 +122,8 @@ MEDIOS INTERACTIVOS
                         </div>  
                     </div>
                     <div class="hireMe__button pt-4">
-                        <a href="mauro.ezequiel66@gmail.com" aria-label="Enviar mensaje al correo"
-                            class="cursor-pointer no-underline border-round-lg">Contratame</a>
+                        <a href="mailTo:mauro.ezequiel66@gmail.com" aria-label="Enviar mensaje al correo"
+                            class="cursor-pointer no-underline border-round-lg">contrátame</a>
                     </div>
 
                 </div>
@@ -149,7 +149,7 @@ MEDIOS INTERACTIVOS
             <div class="portfolio__title flex flex-column gap-3 text-center">
                 <h1 class="text-3xl md:text-5xl">Mi trabajo</h1>
                 <p class="text-gray-400 text-sm md:text-base">
-                    Me especializo en el deseño web y el modelado 3D.
+                    Me especializo en el diseño web y el modelado 3D.
                 </p>
             </div>
             <div class="portfolio__gallery">
@@ -159,17 +159,19 @@ MEDIOS INTERACTIVOS
                         <li class="filter-item " data-filter="Modelado3d">Modelado 3d</li>
                         <li class="filter-item " data-filter="Animacion">Animacion</li>
                         <li class="filter-item " data-filter="Videojuegos">Videojuegos</li>
+                        <li class="filter-item " data-filter="Sublimacion">Diseno y Sublimacion</li>
                         <li class="filter-item " data-filter="IllustracionyUx">Illustracion y UX</li>
                     </ul>
                 </div>
                 <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
-                    <div class="project__card Modelado 3d">
+                    <div class="project__card Modelado3d">
                         <img src="img/img1.png" alt="">
                         <div class="overlay"></div>
                         <div
                             class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            <h2>Modelado Tablero de ajedrez</h2>
+                            <p>
+                                Tablero de ajedrez realizado y renderizado en MAYA.
                             </p>
                             <span><i class="fa-solid fa-arrow-right-long"></i></span>
                         </div>
@@ -179,8 +181,8 @@ MEDIOS INTERACTIVOS
                         <div class="overlay"></div>
                         <div
                             class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            <h2>Casa 3D</h2>
+                            <p>Casa realizada y renderizado en MAYA.
                             </p>
                             <span><i class="fa-solid fa-arrow-right-long"></i></span>
                         </div>
@@ -190,8 +192,8 @@ MEDIOS INTERACTIVOS
                         <div class="overlay"></div>
                         <div
                             class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            <h2>Animacion zombi</h2>
+                            <p>Animación 2d zombi en After Effects.
                             </p>
                             <span><i class="fa-solid fa-arrow-right-long"></i></span>
                         </div>
@@ -201,8 +203,8 @@ MEDIOS INTERACTIVOS
                         <div class="overlay"></div>
                         <div
                             class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            <h2>Diseño de interfaz</h2>
+                            <p>Diseño de Pagina web para empresa de videojuegos.
                             </p>
                             <span><i class="fa-solid fa-arrow-right-long"></i></span>
                         </div>
@@ -212,8 +214,8 @@ MEDIOS INTERACTIVOS
                         <div class="overlay"></div>
                         <div
                             class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            <h2>Arboles Modelo</h2>
+                            <p>Modelo 3D árboles en Blender.
                             </p>
                             <span><i class="fa-solid fa-arrow-right-long"></i></span>
                         </div>
@@ -223,27 +225,223 @@ MEDIOS INTERACTIVOS
                         <div class="overlay"></div>
                         <div
                             class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
-                            </p>
-                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                        </div>
-                    </div>
-                    <div class="project__card IllustracionyUx">
-                        <img src="img/logo 2.png" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            <h2>Poster</h2>
+                            <p>Ilustración de un poster para una propuesta de videojuego.
                             </p>
                             <span><i class="fa-solid fa-arrow-right-long"></i></span>
                         </div>
                     </div>
 
-    <video width="640" height="360" controls>
+                
+
+                    <div class="project__card Sublimacion">
+                        <img src="img/tazas.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Diseño y sublimación.</h2>
+                            <p>Creación de diseños y sublimados en tazas.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+
+
+                    <div class="project__card Sublimacion">
+                        <img src="img/playera.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Diseño y sublimación.</h2>
+                            <p>Creación de diseños y sublimados en tazas y playeras.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="project__card Sublimacion">
+                        <img src="img/tazas2.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Diseño y sublimación.</h2>
+                            <p>Creación de diseños y sublimados en tazas y playeras.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="project__card IllustracionyUx">
+                        <img src="img/personaje (1).png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Diseño de personaje.</h2>
+                            <p>Diseño de personaje para un videojuego de realidad virtual.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="project__card Modelado3d">
+                        <img src="img/imagen (2).jpg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Diseño de herramientas.</h2>
+                            <p>Diseño de herramientas para un videojuego de realidad virtual en Blender.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+
+
+                    <div class="project__card Modelado3d">
+                        <img src="img/imagen (6).png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Diseño de herramientas.</h2>
+                            <p>Diseño de casa en blender.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+
+
+                    <div class="project__card Modelado3d">
+                        <img src="img/imagen.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Diseño de camioneta low polly.</h2>
+                            <p>Diseño de camioneta low polly para un videojuego de realidad virtual en Blender.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="project__card Modelado3d">
+                        <img src="img/imagen (1).png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Diseño de camioneta low polly.</h2>
+                            <p>Diseño de camioneta low polly para un videojuego de realidad virtual en Blender.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+
+
+                    <div class="project__card Modelado3d">
+                        <img src="img/imagen (2).png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Diseño de casa interior low polly.</h2>
+                            <p>Diseño de casa interior low polly para un videojuego de realidad virtual en Blender.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="project__card Modelado3d">
+                        <img src="img/modelo1.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Modelo de edificios historicos del paso.</h2>
+                            <p>Modelo de edificios históricos del paso para juego en VR.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="project__card Modelado3d">
+                        <img src="img/modelo2.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Modelo de edificios historicos del paso.</h2>
+                            <p>Modelo de edificios históricos del paso para juego en VR.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="project__card IllustracionyUx">
+                        <img src="img/FOTO 1.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Ilustración de persdonaje</h2>
+                            <p>Ilustración de persdonajes para narrar historia de un videojuego.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="project__card IllustracionyUx">
+                        <img src="img/FOTO 5.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Ilustración de persdonaje</h2>
+                            <p>Ilustración de persdonajes para narrar historia de un videojuego.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="project__card IllustracionyUx">
+                        <img src="img/FOTO 3.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Ilustración de persdonaje</h2>
+                            <p>Ilustración de persdonajes para narrar historia de un videojuego.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+
+                    
+
+
+
+
+                    <div class="project__card IllustracionyUx">
+                        <img src="img/logo 2.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Logo</h2>
+                            <p>Diseño de logo para videojuego
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card Videojuegos">
+    <video width="300" height="360" controls>
         <source src="img/TRAILERFINAL.mov" type="video/mp4">
-     
+    </div>
+
+    <div class="project__card Videojuegos">
+        <video width="300" height="360" controls>
+            <source src="img/video-20241030-101426 a.m.-c0c43e22.mp4" type="video/mp4">
+        </div>
     
     </video>
                 </div>
@@ -256,14 +454,13 @@ MEDIOS INTERACTIVOS
                 <p>Diseñador Digital de medios interactivos</p>
                 <p>Contactame en mis redes sociales</p>
                 <div class="social__mediaIcons mt-5 flex lg:justify-content-center gap-3">
-                    <a href="https://www.facebook.com" target="_blank" aria-label="Ir a facebook">
+                    <a href="https://www.facebook.com/profile.php?id=61560493946258" target="_blank" aria-label="Ir a facebook">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
-                    <a href="https://www.instagram.com" target="_blank" aria-label="Ir a instagram">
+                    <a href="https://www.instagram.com/artesub_/" target="_blank" aria-label="Ir a instagram">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="https://www.linkedin.com" target="_blank" aria-label="Ir a linkedin">
-                        <i class="fa-brands fa-linkedin-in"></i>
+
                     </a>
                 </div>
             </div>
